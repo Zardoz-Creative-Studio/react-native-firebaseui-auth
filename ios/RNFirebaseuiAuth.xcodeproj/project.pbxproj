@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06AA5842244976B400B54C35 /* CustomAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AA5840244976B400B54C35 /* CustomAuthViewController.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNFirebaseuiAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNFirebaseuiAuth.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		06AA5840244976B400B54C35 /* CustomAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAuthViewController.m; sourceTree = "<group>"; };
+		06AA5841244976B400B54C35 /* CustomAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAuthViewController.h; sourceTree = "<group>"; };
 		134814201AA4EA6300B7C361 /* libRNFirebaseuiAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNFirebaseuiAuth.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNFirebaseuiAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFirebaseuiAuth.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNFirebaseuiAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFirebaseuiAuth.m; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNFirebaseuiAuth.h */,
+				06AA5841244976B400B54C35 /* CustomAuthViewController.h */,
+				06AA5840244976B400B54C35 /* CustomAuthViewController.m */,
 				B3E7B5891CC2AC0600A0062D /* RNFirebaseuiAuth.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
@@ -114,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNFirebaseuiAuth.m in Sources */,
+				06AA5842244976B400B54C35 /* CustomAuthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

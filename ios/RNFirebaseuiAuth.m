@@ -1,5 +1,6 @@
 
 #import "RNFirebaseuiAuth.h"
+#import "CustomAuthViewController.h"
 
 @interface RNFirebaseuiAuth ()
 @property (nonatomic, retain) FUIAuth *authUI;
@@ -23,9 +24,14 @@
     self = [super init];
     if (self) {
         self.authUI = [FUIAuth defaultAuthUI];
+        self.authUI.autoUpgradeAnonymousUsers = true;
         self.authUI.delegate = self;
     }
     return self;
+}
+
+- (FUIAuthPickerViewController *)authPickerViewControllerForAuthUI:(FUIAuth *)authUI {
+    return [[CustomAuthViewController alloc] initWithAuthUI:authUI];
 }
 
 RCT_EXPORT_MODULE();
@@ -60,7 +66,6 @@ RCT_EXPORT_METHOD(signIn:(NSDictionary *)options
     UINavigationController *authViewController = [self.authUI authViewController];
     UIViewController *rootVC = UIApplication.sharedApplication.delegate.window.rootViewController;
     [rootVC presentViewController:authViewController animated:YES completion:nil];
-
     self._resolve = resolve;
     self._reject = reject;
 }
